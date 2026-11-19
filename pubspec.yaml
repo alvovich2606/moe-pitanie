@@ -1,0 +1,38 @@
+name: kbzhu_diary
+description: Дневник КБЖУ — учёт калорий, белков, жиров и углеводов.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  http: ^1.2.2
+  logger: ^2.4.0
+  mobile_scanner: ^6.0.2
+  permission_handler: ^11.3.1
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#1B6E43"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
